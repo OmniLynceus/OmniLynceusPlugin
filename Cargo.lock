@@ -76,7 +76,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "omnilynceus-lib"
+name = "omnilynceus"
 version = "0.1.0"
 dependencies = [
  "shared_memory",

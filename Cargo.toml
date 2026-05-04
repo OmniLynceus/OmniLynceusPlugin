@@ -1,8 +1,8 @@
 [package]
-name = "omnilynceus-lib"
+name = "omnilynceus"
 version = "0.1.0"
 edition = "2024"
-description = "Shared memory communication library for OmniLynceus"
+description = "Plugin CLI and API for OmniLynceus"
 license = "MIT"
 authors = ["unraous"]
 
