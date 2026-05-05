@@ -1,3 +1,21 @@
 [package]
-name = "omnilynceus_cli"
-description = "CLI for OmniLynceus"
+name = "omnilynceus"
+version = "0.1.0"
+edition = "2024"
+description = "Plugin CLI for OmniLynceus"
+license = "MIT"
+authors = ["unraous"]
+repository = "https://github.com/OmniLynceus/OmniLynceusPlugin"
+
+[[bin]]
+name = "omnilynceus"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.102"
+clap = { version = "4.6.1", features = ["derive"] }
+include_dir = "0.7.4"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "1.1.2"
+walkdir = "2.5.0"
+zip = "8.6.0"

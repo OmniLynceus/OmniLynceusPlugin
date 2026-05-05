@@ -1,0 +1,22 @@
+use omnilynceus_lib::MemHandle;
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    let mut mem = MemHandle::init()
+        .expect("Failed to initialize shared memory. Please run via OmniLynceusLoader.");
+  
+    println!("Plugin '{{name}}' started!");
+
+    /// TODO: 在这里实现插件的核心逻辑，例如监听游戏事件、计算坐标等。
+    loop {
+        let x = 600;
+        let y = 600;
+      
+        if let Err(e) = mem.write(x, y) {
+            eprintln!("Error writing to memory: {}", e);
+        }
+      
+        thread::sleep(Duration::from_millis(500));
+    }
+}
