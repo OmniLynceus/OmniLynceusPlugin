@@ -1,10 +1,6 @@
-[package]
-name = "omnilynceus"
-version = "0.1.0"
-edition = "2024"
-description = "Plugin CLI and API for OmniLynceus"
-license = "MIT"
-authors = ["unraous"]
-
-[dependencies]
-shared_memory = "0.12.4"
+[workspace]
+members = [
+    "cli",
+    "lib",
+]
+resolver = "2"

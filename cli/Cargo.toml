@@ -1,0 +1,3 @@
+[package]
+name = "omnilynceus_cli"
+description = "CLI for OmniLynceus"

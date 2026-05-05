@@ -1,0 +1,11 @@
+[package]
+name = "omnilynceus_lib"
+version = "0.1.0"
+edition = "2024"
+description = "Plugin library for OmniLynceus"
+license = "MIT"
+authors = ["unraous"]
+repository = "https://github.com/OmniLynceus/OmniLynceusPlugin"
+
+[dependencies]
+shared_memory = "0.12.4"
